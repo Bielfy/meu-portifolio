@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+
+:root {
+    --cor-vermelho: #D63827;
+    --cor-cinza-escuro-header: #212529;
+    --cor-cinza-escuro: #343A40;
+    --cor-cinza-claro: #4E5861;
+    --cor-branco: #FFFFFF;
+    --cor-preto: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box; /*define que nada vai ultrapassar os limites do body*/
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+    background-color: var(--cor-cinza-escuro-header);
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.cabecalho__titulo {
+    text-align: center;
+    color: var(--cor-vermelho);
+    font-size: 36px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.cabecalho__titulo span {
+    color: var(--cor-branco);
+}
+
+.cabecalho__menu ul{
+    list-style: none;
+    justify-content: flex-end;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.cabecalho__menu__links {
+    text-decoration: none;
+    color: var(--cor-branco);
+}
+
+.cabecalho__menu__links:hover {
+    color: var(--cor-vermelho);
+    text-shadow: 1px 1px 6px ;
+}
+
+.hr__cabecalho {
+    border: none;
+    height: 2px;
+    background-color: var(--cor-branco);
+}
+
+/* APRESENTAÇÃO */
+
+.apresentacao {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50vh;
+    background-color: var(--cor-cinza-escuro);
+    color: var(--cor-branco);
+}
+
+.apresentacao__informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.apresentacao__informacoes__titulo {
+    font-size: 40px;
+}
+
+.apresentacao__informacoes__paragrafo {
+    font-size: 27px;
+}
+
+.apresentacao__informacoes__paragrafo-sout {
+    font-size: 27px;
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.codigo-system {
+    color: #E5C07B;
+}
+
+.codigo-out {
+    color: #D19A66;
+}
+
+.codigo-println {
+    color: #61AFEF;
+}
+
+.codigo-parenteses {
+    color: #E5C07B;
+}
+
+.codigo-string {
+    color: #98C379;
+}
+
+.apresentacao__foto-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apresentacao__informacoes__icons {
+    padding-top: 41px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.apresentacao__informacoes__icons__icon {
+    width: 63px;
+}
+
+.apresentacao__foto-perfil {
+    width: 423px;
+    height: 423px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: solid var(--cor-vermelho) 3px;
+    position: relative;
+}
+
+.apresentacao__botao-seta {
+    display: flex;
+    background-color: var(--cor-branco);
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg) scale(1.1);
+    border-radius: 50%;
+}
+
+.apresentacao__botao-seta:hover {
+    background-color: var(--cor-vermelho);
+    transform: translateX(-50%) rotate(90deg) scale(1.1);
+    box-shadow: 0 0 15px var(--cor-vermelho);
+}
+
+/* SOBRE MIN */
+
+.biografia {
+    height: 80vh;
+    background-color: var(--cor-cinza-claro);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-secao {
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-weight: 400;
+    padding-top: 42px;
+    font-size: 40px;
+    color: var(--cor-branco);
+}
+
+.hr__biografia {
+    border: none;
+    height: 5px;
+    width: 193px;
+    background-color: var(--cor-vermelho);
+}
+
+.biografia__paragrafo {
+    font-size: 30px;
+    color: var(--cor-branco);
+    padding-top: 174px;
+    padding-left: 185.5px;
+    padding-right: 185.5px;
+    text-align: center;
+    width: 1233px;
+}
+
+/* TECNOLOGIAS */
+
+.tecnologias {
+    height: 80vh;
+    background-color: var(--cor-cinza-escuro);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tecnologias__titulo {
+    font-family: "Kdam Thmor Pro", sans-serif;
+    padding-top: 42px;
+    font-size: 40px;
+    color: var(--cor-branco);
+}
+
+.hr__tecnologias {
+    border: none;
+    height: 5px;
+    width: 215px;
+    background-color: var(--cor-vermelho);
+}
+
+.tecnologias__imagens {
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 110px;
+}
+
+.tecnologias__imagens__img {
+    width: 120px;
+}
+
+.tecnologias__paragrafo {
+    font-size: 30px;
+    color: var(--cor-branco);
+    padding-top: 100px;
+    padding-left: 185.5px;
+    padding-right: 185.5px;
+    text-align: center;
+    width: 1233px;
+}
+
+
+
+/* PROJETOS */
+
+.projetos {
+    height: 100%;
+    width: 100%;
+    background-color: var(--cor-cinza-claro);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-branco);
+}
+
+.projetos__titulo {
+    font-family: "Kdam Thmor Pro", sans-serif;
+    padding-top: 42px;
+    font-size: 40px;
+    color: var(--cor-branco);
+}
+
+.hr__projetos {
+    border: none;
+    height: 5px;
+    width: 150px;
+    background-color: var(--cor-vermelho);
+}
+
+.projetos__colecao {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+}
+
+.projetos__colecao__card {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-items: center;
+    min-height: 500px;
+
+    border: 2px solid var(--cor-cinza-escuro);
+    border-radius: 10px;
+}
+
+.projetos__colecao__card:hover {
+    border: 2px solid var(--cor-vermelho);
+}
+
+.projetos__colecao__card > a {
+    display: block;
+    width: 100%;
+    height: 300px; /* altura obrigatória pro cover funcionar */
+    overflow: hidden; /* evita transbordamento da imagem */
+}
+
+.projetos__colecao__card > a > img {
+    width: 400px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.projetos__colecao__card > h3 {
+    margin-top: 10px;
+}
+
+.projetos__colecao__card__paragrafo {
+    font-size: 15px;
+}
+
+.projetos__paragrafo {
+    padding-top: 100px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    color: var(--cor-branco);
+}
+
+
+
+/*RODAPE*/
+
+.rodape {
+    height: 11vh;
+    background-color: var(--cor-preto);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape__paragrafo {
+    text-align: center;
+    color: var(--cor-branco);
+}
+
+.rodape__paragrafo__link {
+    text-decoration: none;
+    color: var(--cor-vermelho);
+}
+
+/*SUAVIZAR HOVERS*/
+
+.cabecalho__menu__links,
+.projetos__colecao__card,
+.apresentacao__botao-seta {
+    transition: all 0.3s ease;
+}

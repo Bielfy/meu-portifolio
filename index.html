@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel T.</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__espaco-vazio"></div>
+        <h1 class="cabecalho__titulo"><span>Dev.</span>Biel</h1>
+        <nav class="cabecalho__menu">
+            <ul>
+                <li><a class="cabecalho__menu__links" href="#biografia">Sobre</a></li>
+                <li><a class="cabecalho__menu__links" href="#tecnologias">Tecnologias</a></li>
+                <li><a class="cabecalho__menu__links" href="#projetos">Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr class="hr__cabecalho">
+    <main>
+        <section class="apresentacao">
+            <div class="apresentacao__informacoes">
+                <h1 class="apresentacao__informacoes__titulo">Gabriel Teodoro</h1>
+                <p class="apresentacao__informacoes__paragrafo" id="typewriter">Backend Developer</p>
+                
+                <p class="apresentacao__informacoes__paragrafo-sout">
+                    <span class="codigo-system">System</span>
+                    <span class="codigo-ponto">.</span>
+                    <span class="codigo-out">out</span>
+                    <span class="codigo-ponto">.</span>
+                    <span class="codigo-println">println</span>
+                    <span class="codigo-parenteses">(</span>
+                    <span class="codigo-string">"Hello, World!"</span>
+                    <span class="codigo-parenteses">)</span>;
+                </p>
+                
+                <div class="apresentacao__informacoes__icons">
+                    <a href="https://www.linkedin.com/in/gabrielteodoro-dev/" target="_blank"><img class="apresentacao__informacoes__icons__icon" src="assets/linkedin-original.svg" alt="Icon Linkedin"></a>
+                    <a href="https://github.com/Bielfy" target="_blank"><img class="apresentacao__informacoes__icons__icon" src="assets/github-original.svg" alt="Icon Github"></a>
+                </div>
+            </div>
+
+            <div class="apresentacao__foto-container">
+                <img class="apresentacao__foto-perfil" src="assets/foto-perfil.jpg" alt="Minha foto">
+            </div>
+
+            <a class="apresentacao__botao-seta" href="#biografia"><img src="assets/seta.png" alt="Seta para rolar a página"></a>
+        </section>
+
+        <div class="biografia" id="biografia">
+            <h2 class="titulo-secao">Sobre mim</h2>
+            <hr class="hr__biografia">
+            <p class="biografia__paragrafo">“Tenho 19 anos e sou estudante de Engenharia de Software. Atualmente, estou focado no desenvolvimento Back-End com Java, área na qual pretendo construir minha carreira. Sou apaixonado por tecnologia e estou sempre em busca de aprimorar minhas habilidades e aprender novas soluções para criar sistemas eficientes e de qualidade.”</p>
+        </div>
+        <div class="tecnologias" id="tecnologias">
+            <h2 class="titulo-secao">Tecnologias</h2>
+            <hr class="hr__tecnologias">
+            <div class="tecnologias__imagens">
+                <img class="tecnologias__imagens__img" src="assets/java-original.svg" alt="Icone Java">
+                <img class="tecnologias__imagens__img" src="assets/spring-original.svg" alt="Icone Spring">
+                <img class="tecnologias__imagens__img" src="assets/html5-original.svg" alt="Icone HTML5">
+                <img class="tecnologias__imagens__img" src="assets/css3-original.svg" alt="Icone CSS3">
+                <img class="tecnologias__imagens__img" src="assets/javascript-original.svg" alt="Icone Javascript">
+            </div>
+            <p class="tecnologias__paragrafo">“Essas são algumas das  tecnologias que tenho conhecimento”</p>
+        </div>
+        <div class="projetos" id="projetos">
+            <h2 class="titulo-secao">Projetos</h2>
+            <hr class="hr__projetos">
+            <div class="projetos__colecao">
+                <div class="projetos__colecao__card">
+                    <a href="https://github.com/Bielfy/api-cep-viaCep" target="_blank"><img class="projetos__img" src="assets/Imagem-fundoProjeto.png" alt="imagem icone java com fundo preto"></a>
+                    <h3>Consulta e Cadastro de Endereços via CEP (Java + ViaCEP)</h3>
+                    <p class="projetos__colecao__card__paragrafo">Aplicação em Java que integra com a API ViaCEP para buscar endereços a partir de CEPs digitados no terminal e salvar os dados em um arquivo .json. Utiliza Maven, Gson e tratamento de exceções para garantir robustez e organização no processo.</p>
+                </div>
+
+                <div class="projetos__colecao__card">
+                    <a href="https://github.com/Bielfy/api-filmes-omdb" target="_blank"><img class="projetos__img" src="assets/Imagem-fundoProjeto.png" alt="imagem icone java com fundo preto"></a>
+                    <h3>Consulta de Filmes via API OMDB (Java + JSON)</h3>
+                    <p class="projetos__colecao__card__paragrafo">Aplicação em Java que permite buscar filmes usando a API OMDB diretamente pelo terminal. As informações coletadas (nome, ano e duração) são armazenadas em um arquivo .json. Projeto com foco em integração de APIs, uso do Maven e tratamento de erros.</p>
+                </div>
+
+                <div class="projetos__colecao__card">
+                    <a href="https://bielfy.github.io/Tela-de-Login/" target="_blank"><img class="projetos__img" src="assets/imagenTelaLogin.png" alt="imagem tela de login"></a>
+                    <h3>Tela de Login Simples</h3>
+                    <p class="projetos__colecao__card__paragrafo">Uma interface de login funcional com HTML, CSS e JavaScript, incluindo validação de entrada e autenticação básica com credenciais fixas. Projeto focado em usabilidade e estruturação front-end clara.</p>
+                </div>
+            </div>
+            <p class="projetos__paragrafo">“Novos projetos estão para ser adiconados...”</p>
+        </div>
+    </main>
+    
+    <footer class="rodape">
+        <p class="rodape__paragrafo">Copyright © 2025 <a class="rodape__paragrafo__link" href="">Gabriel Teodoro</a>. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
